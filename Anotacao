@@ -1,0 +1,26 @@
+CLONE  Copia o repositório remoto para seu computador
+PULL  Atualiza seu repositório local em relação ao repositório remoto
+COMMIT  Salva uma nova versão (tipicamente no seu repositório local)
+PUSH  Envia o repositório local para o repositório remoto
+
+
+
+git init - Inicia um novo repositório local na pasta do seu projeto
+
+git remote add meupc https://github.com/atilaz/aula1-gitrub.git - Associa seu repositório local ao repositório remoto, com o apelido de meupc
+ATENÇÃO: troque pelo caminho do seu repositório do Github
+
+git pull meupc main- Atualiza seu repositório local em relação ao repositório remoto
+ATENÇÃO: este comando só é necessário se você criou o .gitignore pelo Github
+
+git status - Verifica arquivos
+
+git checkout -b main - Esse comando serve para adaptar o Git ao novo padrão onde o branch padrão é o main e não o master, ele muda o branch se existir e cria se não existir.
+
+git add . - Adiciona todos arquivos ao stage para poderem ser salvos
+
+git commit -m "Algum comentário que vc quiser" - Salva uma nova versão do projeto, para ver todas as versões que existem digite: git log --oneline
+
+git push -u meupc main - Envia o repositório local para o repositório remoto
+
+Nota: nas próximas vezes basta fazer: git push 
